@@ -1,0 +1,23 @@
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #000;
+    @media screen and (max-width: 480px){
+        margin-top: -20px;
+    }
+}
+
+.banner__section {
+    @media screen and (max-width: 480px){
+        margin-bottom: 80px;
+    }
+}
+
+.banner__text {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.banner__icon {
+    font-size: 70px;
+}

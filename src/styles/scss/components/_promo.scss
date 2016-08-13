@@ -1,0 +1,51 @@
+.promo {
+    color: white;
+}
+
+.promo__content {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url('../images/mac-close-up-desktop.png');
+    background-size: 100%;
+    @media screen and (max-width: 768px){
+        padding-top: 10%;
+        background-image: url('../images/mac-close-up-mobile.png');
+    }
+}
+
+.promo__content--small {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url('../images/black-keyboard.jpg');
+}
+
+.promo__content--push-up {
+    @media screen and (max-width: 480px){
+        margin-top: -70px;
+    }
+}
+
+.promo__content--blank {
+    background-color: #fff;
+    background-image: none;
+    color: #000;
+    @media screen and (max-width: 480px){
+        .btn {
+            border-color: #000;
+            color: #000;
+        }
+    }
+}
+
+.promo__content--mobile {
+    @media screen and (min-width: 481px){
+        display:none;
+    }
+}
+
+.promo__header--medium {
+    @media screen and (max-width: 768px){
+        width: 70%;
+        margin: 0 auto;
+    }
+}

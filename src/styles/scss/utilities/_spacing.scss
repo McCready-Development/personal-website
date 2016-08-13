@@ -1,0 +1,44 @@
+$spacing-directions: (
+  null,
+  -top,
+  -right,
+  -bottom,
+  -left,
+);
+
+$spacing-properties: (
+  padding,
+  margin
+);
+
+$spacing-sizes: (
+  null: 20px,
+  -tiny: 10px,
+  -small: 15px,
+  -large: 25px,
+) !default;
+
+@each $property in $spacing-properties {
+  @each $direction in $spacing-directions {
+
+    $all: null;
+
+    @if ($direction == null) {
+      $all: -all;
+    }
+
+    @each $size, $value in $spacing-sizes {
+
+      .#{$property}#{$direction}#{$all}#{$size} {
+        #{$property}#{$direction}: $value !important;
+      }
+
+    }
+
+    .#{$property}#{$direction}#{$all}-none {
+      #{$property}#{$direction}: 0 !important;
+    }
+
+  }
+
+}

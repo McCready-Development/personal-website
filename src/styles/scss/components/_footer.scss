@@ -1,0 +1,39 @@
+.footer {
+    background-color: #fff;
+    color: #000;
+
+    @media screen and (max-width: 480px){
+        background-color: #000;
+        color: #fff;
+    }
+
+}
+
+.footer__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    @media screen and (max-width: 480px){
+        width: 70%;
+        text-align: center;
+    }
+
+    ul{
+        li{
+            margin-bottom: 10px;
+            a {
+                text-decoration: none;
+                color: #000;
+                @media screen and (max-width: 480px){
+                    color: #fff;
+                }
+                &:hover {
+                    color: #6699CC;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
