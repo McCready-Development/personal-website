@@ -2236,6 +2236,13 @@ html, body {
 img {
   width: 100%; }
 
+a {
+  color: #000;
+  text-decoration: none; }
+  a:hover {
+    color: #E53F3F;
+    cursor: pointer; }
+
 .container {
   width: 90%;
   margin: 0 auto; }
@@ -2243,12 +2250,16 @@ img {
 .masthead {
   width: 100%;
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0px 28px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  z-index: 35;
+  position: relative; }
 
 .masthead__header {
   width: 10em;
-  margin: 0;
-  padding-top: 17px; }
+  margin: 0; }
   @media screen and (max-width: 480px) {
     .masthead__header {
       text-align: center;
@@ -2263,9 +2274,11 @@ img {
       font-size: 32px !important; } }
 
 .masthead__navbar-list {
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  margin: 0; }
+  .masthead__navbar-list li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline-block; }
   .masthead__navbar-list li:last-child {
     padding-right: 0px; }
   @media screen and (max-width: 480px) {
@@ -2288,19 +2301,16 @@ img {
   color: #000;
   position: relative;
   bottom: 5px; }
-  .masthead__navbar-item-link:hover {
-    color: #6699CC;
-    cursor: pointer; }
 
 .masthead__navbar-item--icon {
   font-size: 30px; }
-  .masthead__navbar-item--icon:hover {
-    color: #6699CC;
-    cursor: pointer; }
 
 .footer {
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  z-index: 35;
+  position: relative;
+  box-shadow: 0 0px 28px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   @media screen and (max-width: 480px) {
     .footer {
       background-color: #000;
@@ -2316,15 +2326,9 @@ img {
       text-align: center; } }
   .footer__content ul li {
     margin-bottom: 10px; }
-    .footer__content ul li a {
-      text-decoration: none;
-      color: #000; }
-      @media screen and (max-width: 480px) {
-        .footer__content ul li a {
-          color: #fff; } }
-      .footer__content ul li a:hover {
-        color: #6699CC;
-        cursor: pointer; }
+    @media screen and (max-width: 480px) {
+      .footer__content ul li a {
+        color: #fff !important; } }
 
 .large-heading {
   font-size: 42px; }
@@ -2407,22 +2411,25 @@ img {
   .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
     width: 100%; } }
 .promo {
-  color: white; }
+  color: white;
+  z-index: 0;
+  position: relative; }
 
 .promo__content {
-  padding-top: 10%;
+  padding-top: 15%;
   padding-bottom: 10%;
-  background-image: url("../images/mac-close-up-desktop.png");
+  background-image: url("../images/black-background-main.jpg");
   background-size: 100%; }
   @media screen and (max-width: 768px) {
     .promo__content {
       padding-top: 10%;
-      background-image: url("../images/mac-close-up-mobile.png"); } }
+      background-image: url("../images/black-background-main.jpg"); } }
 
 .promo__content--small {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  background-image: url("../images/black-keyboard.jpg"); }
+  padding-top: 13%;
+  padding-bottom: 13%;
+  background-image: url("../images/black-background.jpg");
+  z-index: 0; }
 
 @media screen and (max-width: 480px) {
   .promo__content--push-up {
@@ -2457,15 +2464,18 @@ img {
   width: 14em; }
   .btn:hover {
     background-color: #fff;
-    color: #000;
+    color: #E53F3F;
     cursor: pointer; }
   .btn:focus {
     outline: none; }
 
 .banner {
+  z-index: 35;
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
-  color: #000; }
+  color: #000;
+  box-shadow: 0 0px 28px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   @media screen and (max-width: 480px) {
     .banner {
       margin-top: -20px; } }
@@ -2479,7 +2489,8 @@ img {
   margin: 0 auto; }
 
 .banner__icon {
-  font-size: 70px; }
+  font-size: 70px;
+  color: #E53F3F; }
 
 .text-center {
   text-align: center; }
